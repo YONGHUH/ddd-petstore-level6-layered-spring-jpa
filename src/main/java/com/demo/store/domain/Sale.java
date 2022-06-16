@@ -1,5 +1,7 @@
 package com.demo.store.domain;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 import com.demo.store.storeApplication;
@@ -15,13 +17,49 @@ public class Sale {
     String saleDtm ;
 
 
+
+    
+
+
+
+
+    @Embedded  // 1:1
+    SalemenuId oneMenu;  
+
+        public SalemenuId getOneMenu() {
+            return oneMenu;
+        }
+
+        public void setOneMenu(SalemenuId oneMenu) {
+            this.oneMenu = oneMenu;
+        }
+
+    @ElementCollection // 1:n
+    List<SalemenuId> menuIds;
+            
+
+        public List<SalemenuId> getMenuIds() {
+                return menuIds;
+        }
+
+        public void setMenuIds(List<SalemenuId> menuIds) {
+                this.menuIds = menuIds;
+        }
+    
+
+
+
+
+
+
+
     public int getSaleId() {
         return saleId;
     }
     public void setSaleId(int saleId) {
         this.saleId = saleId;
     }
-       
+
     public int getOrderNumber() {
         return orderNumber;
     }

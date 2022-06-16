@@ -5,7 +5,7 @@ import javax.persistence.*;
 import com.demo.store.storeApplication;
 
 @Entity
-public class Menu {
+public class Mastermenu {
 
     @Id @GeneratedValue
     int menuId;
@@ -13,9 +13,15 @@ public class Menu {
     int storeId ;
     String menuNm;
     String amt ;
-    int prodId ;
+    int prodNm ;
 
 
+    public int getProdNm() {
+        return prodNm;
+    }
+    public void setProdNm(int prodNm) {
+        this.prodNm = prodNm;
+    }
     public int getStoreId() {
         return storeId;
     }
@@ -24,12 +30,7 @@ public class Menu {
     }
     
 
-    public int getProdId() {
-        return prodId;
-    }
-    public void setProdId(int prodId) {
-        this.prodId = prodId;
-    }
+
     public String getMenuNm() {
         return menuNm;
     }
