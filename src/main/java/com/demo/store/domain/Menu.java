@@ -16,21 +16,20 @@ public class Menu {
     int prodId ;
 
 
-
-    public String getProdNm() {
-        return prodNm;
-    }
-    public void setProdNm(String prodNm) {
-        this.prodNm = prodNm;
-    }
-    public String getStoreId() {
+    public int getStoreId() {
         return storeId;
     }
-    public void setStoreId(String storeId) {
+    public void setStoreId(int storeId) {
         this.storeId = storeId;
     }
     
 
+    public int getProdId() {
+        return prodId;
+    }
+    public void setProdId(int prodId) {
+        this.prodId = prodId;
+    }
     public String getMenuNm() {
         return menuNm;
     }
