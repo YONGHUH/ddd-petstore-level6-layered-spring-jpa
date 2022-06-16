@@ -1,6 +1,5 @@
 package com.demo.store.domain;
 
-import java.util.List;
 
 import javax.persistence.*;
 
@@ -8,7 +7,7 @@ import javax.persistence.*;
 public class Store {
 
     @Id @GeneratedValue
-    Long id;
+    Long id;  
     
     String storeName;
     String passWd ;
