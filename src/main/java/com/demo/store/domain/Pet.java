@@ -1,8 +1,8 @@
-package com.demo.petstore.domain;
+package com.demo.store.domain;
 
 import javax.persistence.*;
 
-import com.demo.petstore.PetstoreApplication;
+import com.demo.store.storeApplication;
 
 @Entity
 @DiscriminatorColumn(
@@ -54,7 +54,7 @@ public abstract class Pet {
 	}
 
 	public void save(){
-		Repository repository = PetstoreApplication.getApplicationContext().getBean(Repository.class);
+		Repository repository = storeApplication.getApplicationContext().getBean(Repository.class);
 		repository.save(this);
 	}
 

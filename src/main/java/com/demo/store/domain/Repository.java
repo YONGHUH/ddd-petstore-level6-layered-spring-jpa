@@ -1,4 +1,4 @@
-package com.demo.petstore.domain;
+package com.demo.store.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
