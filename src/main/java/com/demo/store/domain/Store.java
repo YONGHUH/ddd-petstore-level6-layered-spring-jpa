@@ -7,23 +7,23 @@ import javax.persistence.*;
 public class Store {
 
     @Id @GeneratedValue
-    Long id;  
-    
+    int storeId;     
+
     String storeName;
     String passWd ;
-    int tableNo ;
+    int tableCnt ;
    
 
     
 
 
 
-    public int getTableNo() {
-        return tableNo;
+    public int getTableCnt() {
+        return tableCnt;
     }
 
-    public void setTableNo(int tableNo) {
-        this.tableNo = tableNo;
+    public void setTableCnt(int tableCnt) {
+        this.tableCnt = tableCnt;
     }
 
     public String getPassWd() {

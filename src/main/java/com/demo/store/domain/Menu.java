@@ -8,16 +8,21 @@ import com.demo.store.storeApplication;
 public class Menu {
 
     @Id @GeneratedValue
-    Long id;
-    
-    String storeId ;
+    int menuId;
 
+    int storeId ;
     String menuNm;
     String amt ;
-    String prodId ;
+    int prodId ;
 
 
 
+    public String getProdNm() {
+        return prodNm;
+    }
+    public void setProdNm(String prodNm) {
+        this.prodNm = prodNm;
+    }
     public String getStoreId() {
         return storeId;
     }
@@ -25,12 +30,6 @@ public class Menu {
         this.storeId = storeId;
     }
     
-    public String getProdId() {
-        return prodId;
-    }
-    public void setProdId(String prodId) {
-        this.prodId = prodId;
-    }
 
     public String getMenuNm() {
         return menuNm;
